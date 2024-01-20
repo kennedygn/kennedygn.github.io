@@ -1,0 +1,54 @@
+/*Kennedy Ninh        300X HW2        1/25/2024*/
+/*This assignment tests my understanding of basic HTML and CSS. I have created the home page's style
+page for a fictional pie company named Granny's Pies.*/
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8e7b9;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #7d3c18;
+}
+
+.featured-pie {
+    text-align: center;
+    padding: 30px;
+}
+
+.granny-pic img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    padding: 30px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #f8e7b9;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-us h2,
+.menu h2 {
+    color: #7d3c18;
+}
+
+.about-us p,
+.menu p {
+    color: #000000;
+}

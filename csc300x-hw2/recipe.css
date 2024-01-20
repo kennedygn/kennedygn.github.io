@@ -1,0 +1,76 @@
+/*Kennedy Ninh        300X HW2        1/25/2024*/
+/*This assignment tests my understanding of basic HTML and CSS. I have created the recipe's style
+page for a pie from a fictional pie company named Granny's Pies.*/
+
+body {
+    background-image: url(silverware.jpg);
+    background-attachment: fixed;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#main-header {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.main-header-container {
+    background-color: #F0F0F0;
+    display: table;
+    margin: 0px auto 0px auto;
+}
+
+
+hr.solid {
+    border-top: 1.5px solid #000000;
+}
+
+.quote-block {
+    background-color: #FFFFA8;
+    padding: 0px;
+    margin: 10px 0;
+    margin-left: 45px;
+    font-style: italic;
+    display: block;
+}
+
+a:link {
+    color: #A4A400;
+}
+
+.tooltip-item {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip-item::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
