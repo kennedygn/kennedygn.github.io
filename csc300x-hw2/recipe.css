@@ -42,7 +42,7 @@ hr.solid {
     margin: 10px 0;
     margin-left: 45px;
     font-style: italic;
-    display: table;
+    display: block;
 }
 
 a:link {
