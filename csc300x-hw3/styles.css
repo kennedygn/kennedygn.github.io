@@ -1,0 +1,203 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px solid #121111;
+    border-radius: 2px;
+}
+
+#recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: #333;
+    align-content: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+
+button {
+    margin-left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.restaurant {
+    width: 450px;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+.dish {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.dish img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dish img:hover {
+    transform: scale(1.1);
+}
+
+.dish-description {
+    display: none;
+}
+
+.dish-description.active {
+    display: block;
+}
+
+.small {
+    width: 250px;
+    height: 60px;
+}
+
+.big {
+    width: 400px;
+    height: 240px;
+}
+
+.container {
+    margin: 200px auto;
+    width: 1000px;
+    height: 500px;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    margin-left: 10px;
+    background-color: white;
+    color: #c0392b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.meal-planner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal-planner-container #recommendations {
+    width: 45%;
+}
+
+.meal-planner-container #meal-plan {
+    width: 45%;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+.meal-planner-container .restaurant {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+.meal-planner-container .dish {
+    margin-bottom: 20px;
+}
+
+.meal-planner-container .image-container {
+    position: relative;
+}
+
+.meal-planner-container .dish img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.meal-planner-container .dish-description {
+    display: none;
+}
+
+.meal-planner-container .dish-description.active {
+    display: block;
+}
+
+.meal-planner-container button {
+    margin-left: 10px;
+}
