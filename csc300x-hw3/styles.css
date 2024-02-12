@@ -14,6 +14,30 @@ header {
     text-align: center;
 }
 
+.header-image1 {
+    width: 145px; /* Example width */
+    height: auto;
+    position: absolute;
+    left: 50px;
+    transform: translateY(-20%); /* Adjust vertical alignment */
+}
+
+.header-image2 {
+    width: 145px; /* Example width */
+    height: auto;
+    position: absolute;
+    right: 50px;
+    transform: translateY(-20%); /* Adjust vertical alignment */
+}
+
+.header-image3 {
+    width: 115px; /* Example width */
+    height: auto;
+    position: absolute;
+    right: 50px;
+    transform: translateY(-20%); /* Adjust vertical alignment */
+}
+
 main {
     padding: 20px;
 }
