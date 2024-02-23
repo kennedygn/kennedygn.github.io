@@ -1,0 +1,85 @@
+/*Kennedy Ninh        300X HW4        2/23/2024*/
+/*In this assignment, I have practiced putting together all the skills we have reviewed so far by building a simple rockpaper-scissors game on a web page.*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+section {
+  text-align: center;
+  margin: 20px;
+}
+
+.choices img {
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 40%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.choices img:hover {
+  transform: scale(1.1);
+}
+
+#computer-choice {
+  width: 130px;
+  height: 130px;
+  border-radius: 40%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#score-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#score-section h2 {
+  margin-bottom: 10px;
+}
+
+#score-section p {
+  margin-bottom: 5px;
+}
+
+#outcome-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#outcome-section h2 {
+  margin-bottom: 10px;
+}
+
+#outcome-section p {
+  margin-bottom: 5px;
+}

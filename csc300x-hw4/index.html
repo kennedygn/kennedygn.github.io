@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Kennedy Ninh        300X HW4        2/23/2024-->
+<!--In this assignment, I have practiced putting together all the skills we have reviewed so far by building a simple rockpaper-scissors game on a web page.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section id="player-section">
+            <h2>Player</h2>
+            <div class="choices">
+                <img src="assets/images/rock.PNG" alt="Rock" id="rock" onclick="playerChoice('rock')">
+                <img src="assets/images/paper.PNG" alt="Paper" id="paper" onclick="playerChoice('paper')">
+                <img src="assets/images/scissors.PNG" alt="Scissors" id="scissors" onclick="playerChoice('scissors')">
+            </div>
+        </section>
+        <section id="computer-section">
+            <h2>Computer</h2>
+            <img src="assets/images/question-mark.png" alt="Computer Choice" id="computer-choice">
+        </section>
+        <section id="outcome-section">
+            <h2>Outcome</h2>
+            <p id="outcome">Make your move!</p>
+        </section>
+        <section id="score-section">
+            <h2>Score</h2>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button onclick="resetScore()">Reset Score</button>
+        </section>
+    </div>
+</body>
+
+</html>
