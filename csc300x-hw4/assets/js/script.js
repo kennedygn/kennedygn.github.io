@@ -10,6 +10,8 @@ function playerChoice(choice) {
     document.getElementById('paper').style.border = '';
     document.getElementById('scissors').style.border = '';
     document.getElementById(choice).style.border = '2px solid blue';
+    document.getElementById('computer-choice').src = 'assets/images/question-mark.png'; // Set the src attribute to the question mark image
+
 
     document.getElementById('outcome').textContent = 'Thinking...';
 
