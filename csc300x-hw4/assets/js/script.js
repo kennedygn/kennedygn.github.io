@@ -10,7 +10,7 @@ function playerChoice(choice) {
     document.getElementById('paper').style.border = '';
     document.getElementById('scissors').style.border = '';
     document.getElementById(choice).style.border = '2px solid blue';
-    document.getElementById('computer-choice').src = 'assets/images/question-mark.png'; // Set the src attribute to the question mark image
+    document.getElementById('computer-choice').src = 'assets/images/question-mark.PNG'; // Set the src attribute to the question mark image
 
 
     document.getElementById('outcome').textContent = 'Thinking...';
@@ -20,7 +20,7 @@ function playerChoice(choice) {
     let currentIndex = 0;
 
     let shuffleInterval = setInterval(() => {
-        document.getElementById('computer-choice').src = `assets/images/${shuffledImages[currentIndex]}.png`;
+        document.getElementById('computer-choice').src = `assets/images/${shuffledImages[currentIndex]}.PNG`;
         currentIndex++;
         if (currentIndex === shuffledImages.length) {
             currentIndex = 0;
@@ -30,7 +30,7 @@ function playerChoice(choice) {
     setTimeout(() => {
         clearInterval(shuffleInterval);
         let computerChoice = shuffledImages[Math.floor(Math.random() * shuffledImages.length)];
-        document.getElementById('computer-choice').src = `assets/images/${computerChoice}.png`;
+        document.getElementById('computer-choice').src = `assets/images/${computerChoice}.PNG`;
         document.getElementById('computer-choice').style.visibility = 'visible';
 
         let outcome = determineWinner(choice, computerChoice);
@@ -85,7 +85,7 @@ function resetScore() {
     document.getElementById('losses').textContent = losses;
     document.getElementById('ties').textContent = ties;
     document.getElementById('outcome').textContent = 'Make your move!';
-    document.getElementById('computer-choice').src = 'assets/images/question-mark.png';
+    document.getElementById('computer-choice').src = 'assets/images/question-mark.PNG';
     document.getElementById('rock').style.border = '';
     document.getElementById('paper').style.border = '';
     document.getElementById('scissors').style.border = '';
