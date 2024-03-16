@@ -4,33 +4,28 @@
 
 /*By: Kennedy Ninh*/
 function fetchRepositories(username) {
-    const accessToken = "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";
-  
-    const apiUrl = `https://api.github.com/users/${username}/repos`;
-  
-    fetch(apiUrl, {
-      headers: {
-        Authorization: `token ${accessToken}`,
-      },
+  const apiUrl = `https://api.github.com/users/${username}/repos`;
+
+  fetch(apiUrl)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((repoData) => {
-        // Process and display the retrieved repo data
-        displayRepositories(repoData);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        // Display an error message to the user
-        const galleryDiv = document.getElementById("gallery");
-        galleryDiv.innerHTML =
-          "<p>Error fetching repositories. Please try again later.</p>";
-      });
-  }
+    .then((repoData) => {
+      // Process and display the retrieved repo data
+      displayRepositories(repoData);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      // Display an error message to the user
+      const galleryDiv = document.getElementById("gallery");
+      galleryDiv.innerHTML =
+        "<p>Error fetching repositories. Please try again later.</p>";
+    });
+}
+
   
   /*By: Hayden Perusek*/
   function displayRepositories(repositories) {
